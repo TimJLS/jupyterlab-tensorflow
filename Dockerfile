@@ -1,4 +1,4 @@
-FROM jupyter/datascience-notebook
+FROM jupyter/tensorflow-notebook
 ENV NODE_OPTIONS="--max-old-space-size=4096"
 RUN pip install --upgrade jupyterlab-git
 RUN jupyter labextension install nbdime-jupyterlab --no-build && \
