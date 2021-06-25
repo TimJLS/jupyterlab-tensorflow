@@ -1,7 +1,6 @@
-FROM jupyter/tensorflow-notebook
-ENV NODE_OPTIONS="--max-old-space-size=4096"
-
 FROM timsu27/general-jupyterlab:1.0.1-python3.8
+
+ENV NODE_OPTIONS="--max-old-space-size=4096"
 
 # Install Tensorflow
 RUN pip install --quiet --no-cache-dir \
